@@ -67,7 +67,7 @@ export function WhyUs() {
                     <div className="text-sm text-muted-foreground">Clients</div>
                   </div>
                    <div className="p-4 bg-muted rounded-lg text-center">
-                    <div className="text-3xl font-bold text-primary mb-1">100+</div>
+                    <div className="text-3xl font-bold text-primary mb-1">15+</div>
                     <div className="text-sm text-muted-foreground">Projects</div>
                   </div>
                    <div className="p-4 bg-muted rounded-lg text-center">

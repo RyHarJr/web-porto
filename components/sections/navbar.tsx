@@ -18,11 +18,31 @@ const navItems = [
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
   const [scrolled, setScrolled] = React.useState(false)
+  const [activeSection, setActiveSection] = React.useState<string | null>(null)
 
   React.useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
     }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  
+  React.useEffect(() => {
+    const sections = document.querySelectorAll("section")
+    const handleScroll = () => {
+      let current: string | null = ""
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.clientHeight
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          current = section.getAttribute("id")
+        }
+      })
+      setActiveSection(current)
+    }
+
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -47,7 +67,10 @@ export function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium hover:text-primary transition-colors"
+                className={cn(
+                  "text-sm font-medium hover:text-primary transition-colors",
+                  activeSection === item.href.replace("#", "") ? "text-primary" : ""
+                )}
               >
                 {item.name}
               </Link>

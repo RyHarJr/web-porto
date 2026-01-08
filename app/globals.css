@@ -6,19 +6,19 @@
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  
+
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  
+
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  
+
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
 
@@ -33,48 +33,63 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f8fafc; /* Slate 50 */
-  --foreground: #020617; /* Slate 950 */
-  
+  --background: #f8fafc;
+  /* Slate 50 */
+  --foreground: #020617;
+  /* Slate 950 */
+
   --card: #ffffff;
   --card-foreground: #020617;
-  
-  --primary: #4f46e5; /* Indigo 600 */
+
+  --primary: #4f46e5;
+  /* Indigo 600 */
   --primary-foreground: #ffffff;
-  
-  --secondary: #e2e8f0; /* Slate 200 */
+
+  --secondary: #e2e8f0;
+  /* Slate 200 */
   --secondary-foreground: #0f172a;
-  
-  --muted: #f1f5f9; /* Slate 100 */
-  --muted-foreground: #64748b; /* Slate 500 */
-  
-  --accent: #0ea5e9; /* Sky 500 */
+
+  --muted: #f1f5f9;
+  /* Slate 100 */
+  --muted-foreground: #64748b;
+  /* Slate 500 */
+
+  --accent: #4f46e5;
+  /* Sky 500 */
   --accent-foreground: #ffffff;
-  
+
   --border: #e2e8f0;
   --input: #e2e8f0;
   --ring: #4f46e5;
 }
 
 .dark {
-  --background: #020617; /* Slate 950 */
-  --foreground: #f8fafc; /* Slate 50 */
-  
-  --card: #0f172a; /* Slate 900 */
+  --background: #020617;
+  /* Slate 950 */
+  --foreground: #f8fafc;
+  /* Slate 50 */
+
+  --card: #0f172a;
+  /* Slate 900 */
   --card-foreground: #f8fafc;
-  
-  --primary: #6366f1; /* Indigo 500 */
+
+  --primary: #6366f1;
+  /* Indigo 500 */
   --primary-foreground: #ffffff;
-  
-  --secondary: #1e293b; /* Slate 800 */
+
+  --secondary: #1e293b;
+  /* Slate 800 */
   --secondary-foreground: #f8fafc;
-  
-  --muted: #0f172a; /* Slate 900 */
-  --muted-foreground: #94a3b8; /* Slate 400 */
-  
-  --accent: #38bdf8; /* Sky 400 */
+
+  --muted: #0f172a;
+  /* Slate 900 */
+  --muted-foreground: #94a3b8;
+  /* Slate 400 */
+
+  --accent: #6366f1;
+  /* Sky 400 */
   --accent-foreground: #020617;
-  
+
   --border: #1e293b;
   --input: #1e293b;
   --ring: #6366f1;
@@ -86,7 +101,12 @@ body {
   font-family: var(--font-sans);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
 }
 

@@ -1,6 +1,4 @@
-"use client"
-
-import { CheckCircle2, Gauge, Lock, Smartphone, Search, Headphones } from "lucide-react"
+import { Lock, Smartphone, Search, Headphones } from "lucide-react"
 
 const features = [
   {
@@ -31,12 +29,8 @@ export function WhyUs() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">
-              Why Choose Us?
-            </h2>
-            <p className="text-muted-foreground mb-8 text-lg">
-              We don't just build websites; we build digital assets that drive growth. Here is what sets us apart.
-            </p>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-6">Why Choose Us?</h2>
+            <p className="text-muted-foreground mb-8 text-lg">We don&apos;t just build websites; we build digital assets that drive growth. Here is what sets us apart.</p>
             <div className="space-y-6">
               {features.map((feature, index) => (
                 <div key={index} className="flex gap-4">
@@ -53,28 +47,28 @@ export function WhyUs() {
               ))}
             </div>
           </div>
-          
+
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-2xl filter blur-3xl opacity-30"></div>
             <div className="relative rounded-2xl border bg-card p-8 shadow-xl">
-               <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 bg-muted rounded-lg text-center">
-                    <div className="text-3xl font-bold text-primary mb-1">99%</div>
-                    <div className="text-sm text-muted-foreground">Uptime</div>
-                  </div>
-                   <div className="p-4 bg-muted rounded-lg text-center">
-                    <div className="text-3xl font-bold text-primary mb-1">50+</div>
-                    <div className="text-sm text-muted-foreground">Clients</div>
-                  </div>
-                   <div className="p-4 bg-muted rounded-lg text-center">
-                    <div className="text-3xl font-bold text-primary mb-1">15+</div>
-                    <div className="text-sm text-muted-foreground">Projects</div>
-                  </div>
-                   <div className="p-4 bg-muted rounded-lg text-center">
-                    <div className="text-3xl font-bold text-primary mb-1">5★</div>
-                    <div className="text-sm text-muted-foreground">Ratings</div>
-                  </div>
-               </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="p-4 bg-muted rounded-lg text-center">
+                  <div className="text-3xl font-bold text-primary mb-1">99%</div>
+                  <div className="text-sm text-muted-foreground">Uptime</div>
+                </div>
+                <div className="p-4 bg-muted rounded-lg text-center">
+                  <div className="text-3xl font-bold text-primary mb-1">50+</div>
+                  <div className="text-sm text-muted-foreground">Clients</div>
+                </div>
+                <div className="p-4 bg-muted rounded-lg text-center">
+                  <div className="text-3xl font-bold text-primary mb-1">15+</div>
+                  <div className="text-sm text-muted-foreground">Projects</div>
+                </div>
+                <div className="p-4 bg-muted rounded-lg text-center">
+                  <div className="text-3xl font-bold text-primary mb-1">5★</div>
+                  <div className="text-sm text-muted-foreground">Ratings</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
